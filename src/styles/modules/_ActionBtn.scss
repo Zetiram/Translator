@@ -1,0 +1,104 @@
+@use 'general.scss' as *;
+
+.ActionBtn__Container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.ActionBtn__CountContainer--p{
+	text-align: right;
+	font-size: 12px;
+	color: $More-dark-grayish-blue;
+	margin-bottom: 0.5rem;
+	transition: ease 0.5s all;
+}
+
+
+.full {
+	color: $Full;
+}
+
+.ActionBtn__CopyContainer {
+	display: flex;
+}
+
+.switchBtn {
+	margin-left: 2rem;
+}
+
+.switchBtn button:hover, .ActionBtn__CopyContainer button:hover  {
+	border: 2px solid $Light-grayish-blue;
+}
+
+.switchBtn button:active, .ActionBtn__CopyContainer button:active {
+	border: 2px solid $More-dark-grayish-blue;
+
+	transition: 0.1s ease;
+
+}
+
+.ActionBtn__CopyContainer button, .switchBtn button {
+	border: 2px solid $More-dark-grayish-blue;
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	transition: 0.5s ease;
+}
+
+.TranslateBtn {
+	background-color: $Bright-blue;
+	width: 7rem;
+	height: 2.5rem;
+}
+
+.TranslateSpan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.LanguageBtn__Container {
+		justify-content: flex-start;
+	}
+
+	.resultBtnContainer {
+		.SelectLanguage__Container {
+		margin-right: 25.8rem;
+	}
+
+	.switchBtn {
+		margin-left: 0;
+	}
+	}
+}
+
+@media (min-width: 1024px) {
+	.TranslateBtn {
+	background-color: $Bright-blue;
+	width: 8rem;
+	height: 2.8rem;
+}
+	.resultBtnContainer .SelectLanguage__Container {
+		margin-right: 18.5rem;
+	}
+
+	.ActionBtn__Container {
+		height: 64px;
+		align-items: flex-end;
+	}
+
+	.ActionBtn__CopyContainer button, .switchBtn button {
+		width: 2.2rem;
+		height: 2.2rem;
+	}
+
+	.ActionBtn__CopyContainer button img, .switchBtn button img {
+		width: 22px;
+	}
+}

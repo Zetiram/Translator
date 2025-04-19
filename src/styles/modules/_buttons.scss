@@ -1,0 +1,51 @@
+@use 'general.scss' as *;
+
+.LanguageBtn__Container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 0.8rem;
+	padding-right: 5rem;
+}
+
+.resultBtnContainer {
+	padding-right: 0px;
+}
+
+
+button {
+	color: $Light-white;
+	border: none;
+	font-size: 14px;
+	background-color: transparent;
+	width: 5rem;
+	height: 2.3rem;
+	border-radius: 10px;
+	cursor: pointer;
+/*	margin: 0.8rem 0 0.5rem 0.5rem;
+*/}
+
+.SelectLanguage__Container {
+	border: none;
+	width: 6rem;
+	height: 2.3rem;
+	color: white;
+	border-radius: 10px;
+	background-color: transparent;
+	padding: 0 5px;
+	cursor: pointer;
+}
+
+.active {
+	background-color: $More-dark-grayish-blue;
+}
+
+select:focus-visible {
+	outline: none;
+}
+
+option {
+	color: $Light-white;
+	background-color: $Very-dark-grayish-blue;
+}
+

@@ -1,0 +1,18 @@
+@use './general.scss' as *;
+
+.userText_Section {
+	margin-bottom: 0.5rem;
+}
+
+@media(min-width: 1024px) {
+	.userText__Section, .resultText__Section {
+		width: 40rem;
+		height: 20rem;
+		border-radius: 20px;
+	}
+
+	.SectionsContainer {
+		display: flex;
+		justify-content: space-evenly;
+	}
+}

@@ -1,0 +1,102 @@
+$Black: #040711;
+$Very-dark-grayish-blue: #394150;
+$More-dark-grayish-blue: #4D5562;
+$Light-grayish-blue: #cdd5e0;
+$Light-white: #F9FAFB;
+$Bright-blue: #3662e3;
+$Soft-Blue: #7CA9F3;
+$Dark-grayish-blue: #212936cc; /*CC*/
+$Very-dark-blue: #121826cc;
+$Full: #d31414;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: SansBold;
+	src: url('../assets/static/DMSans-Bold.ttf');
+	font-weight: bold;
+}
+
+button, select, option, textarea, p, a {
+	font-family: SansBold;
+}
+
+.logoContainer {
+	margin: 1rem 0;
+}
+
+.logoContainer, main {
+	display: flex;
+	justify-content: space-around;
+}
+
+main {
+	padding: 1rem 0.8rem;
+	background-image: url('../assets/hero_img.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.userText__Section, .resultText__Section {
+	/*margin: 0 0.6rem;*/
+	border-radius: 10px;
+	border: 1px solid $More-dark-grayish-blue;
+	padding: 0 15px;
+}
+
+.userText__Section {
+	background-color: $Dark-grayish-blue;
+}
+
+.resultText__Section {
+	background-color: $Very-dark-blue;
+	margin-top: 1rem;
+}
+
+.Line {
+	background-color: $More-dark-grayish-blue;
+	height: 1px;
+	width: 100%;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+footer {
+	text-align: center;
+	color: white;
+	margin: 1.3rem 0;
+}
+
+@media (min-width: 1024px) {
+/*	.logoContainer {
+		margin-top: 2rem;
+		padding-top: 1rem;
+	}*/
+	.logoContainer {
+		img {
+			width: 12rem;
+		}
+	}
+	.resultText__Section {
+		margin-top: 0;
+	}
+
+	main {
+		justify-content: center;
+	}
+
+button, select, option, textarea, p {
+	font-size: 1rem !important;
+}
+
+footer {
+	margin-top: 3rem;
+}
+
+}

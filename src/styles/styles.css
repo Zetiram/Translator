@@ -1,0 +1,265 @@
+/*CC*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: SansBold;
+  src: url("../assets/static/DMSans-Bold.ttf");
+  font-weight: bold;
+}
+button, select, option, textarea, p, a {
+  font-family: SansBold;
+}
+
+.logoContainer {
+  margin: 1rem 0;
+}
+
+.logoContainer, main {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  padding: 1rem 0.8rem;
+  background-image: url("../assets/hero_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.userText__Section, .resultText__Section {
+  /*margin: 0 0.6rem;*/
+  border-radius: 10px;
+  border: 1px solid #4D5562;
+  padding: 0 15px;
+}
+
+.userText__Section {
+  background-color: rgba(33, 41, 54, 0.8);
+}
+
+.resultText__Section {
+  background-color: rgba(18, 24, 38, 0.8);
+  margin-top: 1rem;
+}
+
+.Line {
+  background-color: #4D5562;
+  height: 1px;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  margin: 1.3rem 0;
+}
+
+@media (min-width: 1024px) {
+  /*	.logoContainer {
+  		margin-top: 2rem;
+  		padding-top: 1rem;
+  	}*/
+  .logoContainer img {
+    width: 12rem;
+  }
+  .resultText__Section {
+    margin-top: 0;
+  }
+  main {
+    justify-content: center;
+  }
+  button, select, option, textarea, p {
+    font-size: 1rem !important;
+  }
+  footer {
+    margin-top: 3rem;
+  }
+}
+.LanguageBtn__Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+  padding-right: 5rem;
+}
+
+.resultBtnContainer {
+  padding-right: 0px;
+}
+
+button {
+  color: #F9FAFB;
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+  width: 5rem;
+  height: 2.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  /*	margin: 0.8rem 0 0.5rem 0.5rem;
+  */
+}
+
+.SelectLanguage__Container {
+  border: none;
+  width: 6rem;
+  height: 2.3rem;
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #4D5562;
+}
+
+select:focus-visible {
+  outline: none;
+}
+
+option {
+  color: #F9FAFB;
+  background-color: #394150;
+}
+
+.userText_Section {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .userText__Section, .resultText__Section {
+    width: 40rem;
+    height: 20rem;
+    border-radius: 20px;
+  }
+  .SectionsContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+textarea {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 5rem;
+  color: white;
+  resize: none;
+}
+
+textarea:focus-visible {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  textarea {
+    height: 7rem;
+  }
+}
+@media (min-width: 1024px) {
+  textarea {
+    height: 10rem;
+  }
+}
+.ActionBtn__Container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.ActionBtn__CountContainer--p {
+  text-align: right;
+  font-size: 12px;
+  color: #4D5562;
+  margin-bottom: 0.5rem;
+  transition: ease 0.5s all;
+}
+
+.full {
+  color: #d31414;
+}
+
+.ActionBtn__CopyContainer {
+  display: flex;
+}
+
+.switchBtn {
+  margin-left: 2rem;
+}
+
+.switchBtn button:hover, .ActionBtn__CopyContainer button:hover {
+  border: 2px solid #cdd5e0;
+}
+
+.switchBtn button:active, .ActionBtn__CopyContainer button:active {
+  border: 2px solid #4D5562;
+  transition: 0.1s ease;
+}
+
+.ActionBtn__CopyContainer button, .switchBtn button {
+  border: 2px solid #4D5562;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  transition: 0.5s ease;
+}
+
+.TranslateBtn {
+  background-color: #3662e3;
+  width: 7rem;
+  height: 2.5rem;
+}
+
+.TranslateSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .LanguageBtn__Container {
+    justify-content: flex-start;
+  }
+  .resultBtnContainer .SelectLanguage__Container {
+    margin-right: 25.8rem;
+  }
+  .resultBtnContainer .switchBtn {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .TranslateBtn {
+    background-color: #3662e3;
+    width: 8rem;
+    height: 2.8rem;
+  }
+  .resultBtnContainer .SelectLanguage__Container {
+    margin-right: 18.5rem;
+  }
+  .ActionBtn__Container {
+    height: 64px;
+    align-items: flex-end;
+  }
+  .ActionBtn__CopyContainer button, .switchBtn button {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .ActionBtn__CopyContainer button img, .switchBtn button img {
+    width: 22px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
